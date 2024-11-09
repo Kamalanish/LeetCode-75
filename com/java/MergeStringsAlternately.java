@@ -15,14 +15,16 @@ public class MergeStringsAlternately {
         StringBuilder sb = new StringBuilder();
 
         int i = 0, j = 0;
-
+        // executes till any one of the words last index
         while (i < word1.length() && j < word2.length()) {
             sb.append(word1.charAt(i++));
             sb.append(word2.charAt(j++));
         }
+        // to add remaining characters from word 1
         while (i < word1.length()) {
             sb.append(word1.charAt(i++));
         }
+        // to add remaining characters from word 2
         while (j < word2.length()) {
             sb.append(word2.charAt(j++));
         }
