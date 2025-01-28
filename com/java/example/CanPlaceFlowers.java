@@ -1,4 +1,4 @@
-//https://leetcode.com/problems/can-place-flowers/?envType=study-plan-v2&envId=leetcode-75
+package example;//https://leetcode.com/problems/can-place-flowers/?envType=study-plan-v2&envId=leetcode-75
 
 public class CanPlaceFlowers {
 
@@ -8,6 +8,7 @@ public class CanPlaceFlowers {
         int n1 = 1;
         int[] case2 = new int[]{1, 0, 0, 0, 1};
         int n2 = 2;
+
 
         System.out.println(canPlaceFlowers(case1, n1));
         System.out.println(canPlaceFlowers(case2, n2));
