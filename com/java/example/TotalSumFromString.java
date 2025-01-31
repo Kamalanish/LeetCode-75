@@ -10,7 +10,7 @@ public class TotalSumFromString {
 
         findSumWithPattern(str);
 
-        findSum(str);
+        System.out.println(findSum(str));
 
     }
 
@@ -38,7 +38,7 @@ public class TotalSumFromString {
 
                 i++;
                 while (i < str.length() && Character.isDigit(str.charAt(i))) {
-                    num = num * 10 + (str.charAt(i) - '0');
+                    num = num * 10 + (str.charAt(i) - '0'); // converts char in to int
                     i++;
                 }
 

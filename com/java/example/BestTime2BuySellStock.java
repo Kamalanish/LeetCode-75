@@ -1,6 +1,7 @@
 package example;
 
 public class BestTime2BuySellStock {
+
     // prices = [7,1,5,3,6,4]
     public static int maxProfit(int[] prices) {
         int maxProfit = 0;

@@ -10,6 +10,7 @@ public class Search2DMatrix {
         };
 
         System.out.println(searchMatrix(matrix,16));
+        System.out.println(searchMatrix(matrix,2));
     }
 
     static boolean searchMatrix(int[][] matrix, int target) {
