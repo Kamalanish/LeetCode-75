@@ -35,7 +35,6 @@ public class LongestSubstringWotRepeatingChars {
             end++;
 
         }
-
         return maxLen;
     }
 }

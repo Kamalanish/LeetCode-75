@@ -1,3 +1,7 @@
+package stack;
+
+import stack.ArrayStack;
+
 public class DynamicStack<T> extends ArrayStack<T> {
 
     public DynamicStack() {

@@ -1,3 +1,7 @@
+package linkedlist;
+
+import linkedlist.Node;
+
 public class LinkedListStack<T> {
 
     private Node<T> top;

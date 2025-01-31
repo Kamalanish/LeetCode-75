@@ -1,3 +1,7 @@
+package stack;
+
+import java.util.EmptyStackException;
+
 public class ArrayStack<T> {
 
 
