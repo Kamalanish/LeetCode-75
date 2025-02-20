@@ -43,23 +43,23 @@ public class IsAnagram {
         return charMap.isEmpty();
     }
 
-    static boolean validAnagram(String a, String b){
-        if(a.length() != b.length()){
+    static boolean validAnagram(String a, String b) {
+        if (a.length() != b.length()) {
             return false;
         }
 
-        int [] count = new int [26];
+        int[] count = new int[26];
 
-        for(char c : a.toCharArray()){
+        for (char c : a.toCharArray()) {
             count[c - 'a']++;
         }
 
-        for(char c : b.toCharArray()){
+        for (char c : b.toCharArray()) {
             count[c - 'a']--;
         }
 
-        for(int i : count){
-            if(i != 0)
+        for (int i : count) {
+            if (i != 0)
                 return false;
         }
 
