@@ -1,6 +1,5 @@
-package linkedlist;
+package stack;
 
-import linkedlist.Node;
 
 public class LinkedListStack<T> {
 

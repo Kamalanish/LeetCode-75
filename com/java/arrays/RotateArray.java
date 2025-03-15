@@ -14,7 +14,7 @@ public class RotateArray {
 
     static void rotateArray(int[] arr, int k) {
 
-        if (k == arr.length || arr.length == 0 || arr == null) {
+        if (k == arr.length || arr.length == 0) {
             return;
         }
 

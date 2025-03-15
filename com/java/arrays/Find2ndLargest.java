@@ -3,7 +3,7 @@ package arrays;
 public class Find2ndLargest {
 
     public static void main(String[] args) {
-        int[] arr = {12, 35, 1, 10, 34, 1};
+        int[] arr = {12, 35, 1, 10, 34,36};
 
         System.out.println(getSecondLargest(arr));
     }

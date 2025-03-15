@@ -3,6 +3,7 @@ package streamsapi;
 
 import java.util.*;
 import java.util.function.Function;
+import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 import java.util.stream.Stream;
 
@@ -20,6 +21,14 @@ public class StreamsExample {
                 .toList();
 
         System.out.println(list);
+
+        List<String> list1 = Stream.of("code", "decode", "kamal", "code", "java", "java")
+                .collect(Collectors.groupingBy(Function.identity(), counting()))
+                .entrySet().stream().filter(e -> e.getValue() == 1)
+                .map(s -> s.getKey())
+                .toList();
+
+        System.out.println(list1);
 
         // get second highest number
         Optional<Integer> first = IntStream.of(5, 9, 11, 2, 8, 21, 1)
